@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <section class="py-[5%]">
+        <section class="wrapper">
+            <h1 class="text-[22px]">
+                Welcome back Ramshad, <br>
+                Fill out basic details
+
+            </h1>
+
+            <h4 class="mt-[5%]">I'm looking to</h4>
+
+            <div class="mt-[1%]">
+                <ul class="flex">
+                    <li class=""><a href="  " class="py-[4%] px-[22%] text-[18px] border-2 ">sell</a></li>
+                    <li class=" pl-[2%]"><a href="  " class="py-[4%] px-[22%] text-[18px] border-2 ">rent</a></li>
+
+                </ul>
+            </div>
+
+            <h1>What kind of property do you have? </h1>
+            <div class="mt-[3%]">
+                            
+                <input type="radio"  name="gender" value="boy" onclick="showLinks1()"> Residential
+                <input type="radio" name="gender"  value="girl" onclick="showLinks2()">commercial 
+  
+            </div>
+            <div class="mt-[2%]">
+                <ul class="flex">
+                    
+
+                        <li class="mr-[30px]"><a href="" class=" text-[18px] border-2 rounded-full px-[20px]  py-[10px] inline-block" id="link1">  flat/apartment</a></li>
+                        <li class="mr-[30px]"><a href="" class=" text-[18px] border-2 rounded-full px-[20px]  py-[10px] inline-block" id="link2"> indepedent house/vila</a></li>
+                        <li class=""><a href="" class=" text-[18px] border-2 rounded-full px-[20px]  py-[10px]  hidden" id="link3">  Building room</a></li>
+
+                    
+                    
+                    
+                </ul>
+            </div> 
+
+            <div class="pt-[5%]">
+                <a href="http://127.0.0.1:5501/rentlistingpage2.html" class="py-[2%] px-[4%] bg-blue-600  text-white text-[18px] rounded">Continue</a>
+
+            </div>
+        </section>
+    </section>
+    <script>
+        function showLinks1(){
+            document.getElementById("link3").style.display="none"
+            document.getElementById("link1").style.display="block"
+            document.getElementById("link2").style.display="block"
+        }
+        function showLinks2(){
+            document.getElementById("link1").style.display="none"
+            document.getElementById("link2").style.display="none" 
+            document.getElementById("link3").style.display="block"
+        }
+    </script>
+</body>
+</html>
